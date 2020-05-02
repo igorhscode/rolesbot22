@@ -2,7 +2,7 @@
 const { Client, RichEmbed, Emoji, MessageReaction } = require('discord.js');
 const CONFIG = require('./config.example');
 const client = new Client({ disableEveryone: true });
-client.login("NzA2MTk3NjM2OTg1NjUxMjcw.Xq2v0w.8AqsrTZJa15GZzNwYsIHlyQnuh4");
+client.login(process.env.BOT_TOKEN);
 
 // Если для каждой роли нет реакции, предупредите пользователя
 if (CONFIG.roles.length !== CONFIG.reactions.length)
